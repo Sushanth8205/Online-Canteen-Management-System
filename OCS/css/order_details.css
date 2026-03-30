@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.order-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.order-header {
+  border-bottom: 2px solid #001f3f;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.order-header h2 {
+  color: #001f3f;
+  margin: 0 0 10px 0;
+}
+
+.order-status {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-pending { 
+  background: #fff3cd; 
+  color: #856404; 
+}
+
+.status-confirmed { 
+  background: #d1ecf1; 
+  color: #0c5460; 
+}
+
+.status-completed { 
+  background: #d4edda; 
+  color: #155724; 
+}
+
+.status-cancelled { 
+  background: #f8d7da; 
+  color: #721c24; 
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.info-item {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.info-item strong {
+  color: #001f3f;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.items-table th,
+.items-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.items-table th {
+  background: #001f3f;
+  color: white;
+}
+
+.items-table tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.seat-badge {
+  background: #001f3f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.role-badge {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.role-staff { 
+  background: #28a745; 
+  color: white; 
+}
+
+.role-customer { 
+  background: #007bff; 
+  color: white; 
+}
+
+.total-section {
+  background: #001f3f;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.total-section .total-amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-btn:hover {
+  background: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .order-details-container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,67 @@
+/* Header Styles */
+header {
+  background: #001f3f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin: 5px 10px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+}

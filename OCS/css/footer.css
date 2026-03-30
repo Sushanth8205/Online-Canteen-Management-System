@@ -1,0 +1,32 @@
+
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 10px;
+    margin-top: auto;
+  }
+  
+  footer p {
+    font-size: 0.8em;
+  }
+}
